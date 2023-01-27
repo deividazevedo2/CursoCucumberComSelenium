@@ -83,6 +83,12 @@ public class InserirContaSteps {
 		Assert.assertEquals("Já existe uma conta com esse nome!", texto);
 	}
 	
+	@Então("^recebo a mensagem \"([^\"]*)\"$")
+	public void receboAMensagem(String mensagem) throws Throwable {
+		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
+		Assert.assertEquals(mensagem, texto);
+	}
+	
 	@After
 	public void fecharBrowser() {
 		driver.quit();
