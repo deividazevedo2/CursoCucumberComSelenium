@@ -1,10 +1,17 @@
 package br.com.deivid.steps;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
@@ -70,28 +77,38 @@ public class InserirContaSteps {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals("Conta adicionada com sucesso!", texto);
 	}
-	
+
 	@Então("^sou notificado que o nome da conta é obrigatório$")
 	public void souNotificadoQueONomeDaContaÉObrigatório() throws Throwable {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals("Informe o nome da conta", texto);
 	}
-	
+
 	@Então("^sou notificado que já existe uma conta com esse nome$")
 	public void souNotificadoQueJáExisteUmaContaComEsseNome() throws Throwable {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals("Já existe uma conta com esse nome!", texto);
 	}
-	
+
 	@Então("^recebo a mensagem \"([^\"]*)\"$")
 	public void receboAMensagem(String mensagem) throws Throwable {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals(mensagem, texto);
 	}
-	
-	@After
+
+	@After(order = 1)
+	public void screenshot(Scenario cenario) {
+		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("./target/screenshot/cenario_" + cenario.getId() + ".jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@After(order = 0) // After com ordem 0 significa que será o ultimo a ser executado
 	public void fecharBrowser() {
 		driver.quit();
 	}
-	
+
 }
