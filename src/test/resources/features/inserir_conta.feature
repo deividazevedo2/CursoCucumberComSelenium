@@ -1,4 +1,6 @@
 #language: pt
+
+@funcionais
 Funcionalidade: Cadastro de contas
 
 	Como um usuário 
@@ -6,17 +8,20 @@ Funcionalidade: Cadastro de contas
 	Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
 Contexto: 
-	Dado que estou acessando a aplicação
-	Quando informo o usuário "deivid@teste.com"
-	E a senha "abcd1234"
-	E seleciono entrar
-	Então visualizo a página inicial
-	Quando seleciono Contas
-	E seleciono Adicionar
+	#cenário imperativo vd cenário declarativo
+	Dado que desejo adicionar uma conta
+	
+#	Dado que estou acessando a aplicação
+#	Quando informo o usuário "deivid@teste.com"
+#	E a senha "abcd1234"
+#	E seleciono entrar
+#	Então visualizo a página inicial
+#	Quando seleciono Contas
+#	E seleciono Adicionar
 
 Esquema do Cenário: Deve validar regras cadastro contas
-	Quando informo a conta "<conta>"
-	E seleciono Salvar
+	Quando adiciono a conta "<conta>"
+	#E seleciono Salvar
 	Então recebo a mensagem "<mensagem>"
 	
 Exemplos:
