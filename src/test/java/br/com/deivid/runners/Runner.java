@@ -2,9 +2,9 @@ package br.com.deivid.runners;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
 
 /**
  * features: indica qual é o arquivo .feature que será executado 
@@ -20,8 +20,8 @@ import cucumber.api.junit.Cucumber;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/", 
-		glue = "br.com.deivid.steps",
-		tags = { "@unitários"}, 
+		glue = {"br.com.deivid.steps", "br.com.deivid.config"},
+		tags = { "@unitários", "not @ignore"}, 
 		plugin = { "pretty", "html:target/report-html", "json:target/report.json" },
 		monochrome = true, 
 		snippets = SnippetType.CAMELCASE, 

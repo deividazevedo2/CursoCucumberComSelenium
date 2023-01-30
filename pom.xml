@@ -3,18 +3,22 @@
 	<groupId>br.pb.dvd</groupId>
 	<artifactId>CursoCucumber</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.sources>1.8</maven.compiler.sources>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.5</version>
+			<version>4.8.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.2.5</version>
+			<version>4.8.0</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->

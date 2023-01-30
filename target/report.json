@@ -1,11 +1,5 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#language: pt"
-      }
-    ],
     "line": 4,
     "elements": [
       {
@@ -17,15 +11,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4456197800,
+              "duration": 4287074700,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#cenário imperativo vd cenário declarativo"
-              }
-            ],
             "line": 12,
             "name": "que desejo adicionar uma conta",
             "match": {
@@ -36,6 +24,7 @@
         ]
       },
       {
+        "start_timestamp": "2023-01-30T16:35:27.161Z",
         "line": 29,
         "name": "Deve validar regras cadastro contas",
         "description": "",
@@ -43,7 +32,7 @@
         "after": [
           {
             "result": {
-              "duration": 146479300,
+              "duration": 143061400,
               "status": "passed"
             },
             "match": {
@@ -52,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 774835600,
+              "duration": 799882400,
               "status": "passed"
             },
             "match": {
@@ -65,7 +54,7 @@
         "steps": [
           {
             "result": {
-              "duration": 554182500,
+              "duration": 615343700,
               "status": "passed"
             },
             "line": 23,
@@ -79,22 +68,13 @@
               ],
               "location": "InserirContaSteps.adicionoAConta(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 68383900,
+              "duration": 68243200,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 24,
-                "value": "#E seleciono Salvar"
-              }
-            ],
             "line": 25,
             "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
             "match": {
@@ -106,15 +86,11 @@
               ],
               "location": "InserirContaSteps.receboAMensagem(String)"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "line": 3,
             "name": "@funcionais"
           }
         ]
@@ -128,15 +104,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4885674500,
+              "duration": 4282017700,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#cenário imperativo vd cenário declarativo"
-              }
-            ],
             "line": 12,
             "name": "que desejo adicionar uma conta",
             "match": {
@@ -147,6 +117,7 @@
         ]
       },
       {
+        "start_timestamp": "2023-01-30T16:35:33.137Z",
         "line": 30,
         "name": "Deve validar regras cadastro contas",
         "description": "",
@@ -154,7 +125,7 @@
         "after": [
           {
             "result": {
-              "duration": 134845300,
+              "duration": 113548800,
               "status": "passed"
             },
             "match": {
@@ -163,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 934587400,
+              "duration": 808805300,
               "status": "passed"
             },
             "match": {
@@ -176,7 +147,7 @@
         "steps": [
           {
             "result": {
-              "duration": 553425600,
+              "duration": 350494200,
               "status": "passed"
             },
             "line": 23,
@@ -190,22 +161,13 @@
               ],
               "location": "InserirContaSteps.adicionoAConta(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 39746800,
+              "duration": 35986900,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 24,
-                "value": "#E seleciono Salvar"
-              }
-            ],
             "line": 25,
             "name": "recebo a mensagem \"Informe o nome da conta\"",
             "match": {
@@ -217,15 +179,11 @@
               ],
               "location": "InserirContaSteps.receboAMensagem(String)"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "line": 3,
             "name": "@funcionais"
           }
         ]
@@ -239,15 +197,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4522476700,
+              "duration": 4178278700,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#cenário imperativo vd cenário declarativo"
-              }
-            ],
             "line": 12,
             "name": "que desejo adicionar uma conta",
             "match": {
@@ -258,6 +210,7 @@
         ]
       },
       {
+        "start_timestamp": "2023-01-30T16:35:38.739Z",
         "line": 31,
         "name": "Deve validar regras cadastro contas",
         "description": "",
@@ -265,7 +218,7 @@
         "after": [
           {
             "result": {
-              "duration": 366022300,
+              "duration": 111920200,
               "status": "passed"
             },
             "match": {
@@ -274,7 +227,7 @@
           },
           {
             "result": {
-              "duration": 790486800,
+              "duration": 763194200,
               "status": "passed"
             },
             "match": {
@@ -287,7 +240,7 @@
         "steps": [
           {
             "result": {
-              "duration": 455417800,
+              "duration": 347830100,
               "status": "passed"
             },
             "line": 23,
@@ -301,22 +254,13 @@
               ],
               "location": "InserirContaSteps.adicionoAConta(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 39291900,
+              "duration": 47396900,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 24,
-                "value": "#E seleciono Salvar"
-              }
-            ],
             "line": 25,
             "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
             "match": {
@@ -328,29 +272,29 @@
               ],
               "location": "InserirContaSteps.receboAMensagem(String)"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "line": 3,
             "name": "@funcionais"
           }
         ]
       }
     ],
     "name": "Cadastro de contas",
-    "description": "\r\nComo um usuário \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "description": "\tComo um usuário \n\tGostaria de cadastrar contas\n\tPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
     "id": "cadastro-de-contas",
     "keyword": "Funcionalidade",
-    "uri": "inserir_conta.feature",
+    "uri": "file:src/test/resources/features/inserir_conta.feature",
     "tags": [
       {
-        "line": 3,
-        "name": "@funcionais"
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
       }
     ]
   }
